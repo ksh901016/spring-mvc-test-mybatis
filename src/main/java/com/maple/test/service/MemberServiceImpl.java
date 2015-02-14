@@ -36,7 +36,7 @@ public class MemberServiceImpl implements MemberService {
 		
 		member = memberMapper.selectMember(member);
 		
-		return (member == null) ? false : true;
+		return (member==null)? false: true;
 	}
 
 }

@@ -41,13 +41,13 @@ public class MemberController {
 	}
 	
 	@RequestMapping("/login")
-	public String login(Model model, Member member) {
-		
-		if (memberService.login(member)) {
+	public String login(Model model,Member member) {
+		if(memberService.login(member)){
 			return "main";
-		} else {
-			model.addAttribute("errorMsg", "로그인이 실패했습니다.");
+		}else{
+			model.addAttribute("errorMsg", "로그인이실패했습니다.");
 			return "loginForm";
+			
 		}
 	}
 }
