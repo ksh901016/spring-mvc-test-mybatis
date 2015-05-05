@@ -29,7 +29,6 @@
 	
 	
 	
-	
 	<jdbc:embedded-database id="dataSource" type="HSQL">
 		<jdbc:script location="classpath:/create-table.sql"/>
 	</jdbc:embedded-database>
